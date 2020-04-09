@@ -13,7 +13,6 @@ class ChatViewController: UIViewController {
     //Outlets
     @IBOutlet weak var menuButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
