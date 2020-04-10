@@ -22,8 +22,8 @@ class CreateAccountViewController: UIViewController {
     }
     
     //variables
-    let avatarName = "profileDefault"
-    let avatarColor = "[0.5, 0.5, 0.5, 1]"
+    var avatarName = "profileDefault"
+    var avatarColor = "[0.5, 0.5, 0.5, 1]"
     
     @IBAction func createAccountPressed(_ sender: Any) {
         guard let name = userNameText.text, userNameText.text != "" else { return }
@@ -46,6 +46,7 @@ class CreateAccountViewController: UIViewController {
         }
     }
     @IBAction func pickAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     @IBAction func pickBGColorPressed(_ sender: Any) {
     }
@@ -54,6 +55,13 @@ class CreateAccountViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImage.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
     }
 
 }
