@@ -14,6 +14,7 @@
 		086CAF78243DC98E00EF9F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086CAF76243DC98E00EF9F00 /* LaunchScreen.storyboard */; };
 		089104A5243F3BAF00C4288A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089104A4243F3BAF00C4288A /* GradientView.swift */; };
 		089104A8243F49EB00C4288A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089104A7243F49EB00C4288A /* Contants.swift */; };
+		08CA8FA924404AFB0058193A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA8FA824404AFB0058193A /* AuthService.swift */; };
 		08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC21243F53BF008AD7BE /* LoginViewController.swift */; };
 		08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */; };
 		08F6929E243F1072006A0CB2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F6929D243F1072006A0CB2 /* SWRevealViewController.m */; };
@@ -33,6 +34,7 @@
 		089104A3243F1EDA00C4288A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		089104A4243F3BAF00C4288A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		089104A7243F49EB00C4288A /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		08CA8FA824404AFB0058193A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DDEC21243F53BF008AD7BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		08F6929B243F1071006A0CB2 /* Smack-chat-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-chat-app-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		086CAF6A243DC98C00EF9F00 /* Smack-chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				08CA8FA724404AE60058193A /* Services */,
 				089104A6243F49CE00C4288A /* Utilities */,
 				08F692A1243F17DA006A0CB2 /* Model */,
 				08F692A0243F17D3006A0CB2 /* View */,
@@ -98,6 +101,14 @@
 				089104A7243F49EB00C4288A /* Contants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		08CA8FA724404AE60058193A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				08CA8FA824404AFB0058193A /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		08F6929A243F0EDC006A0CB2 /* Supporting Files */ = {
@@ -279,6 +290,7 @@
 				08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */,
 				08F692A3243F1822006A0CB2 /* ChatViewController.swift in Sources */,
 				08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */,
+				08CA8FA924404AFB0058193A /* AuthService.swift in Sources */,
 				08F6929E243F1072006A0CB2 /* SWRevealViewController.m in Sources */,
 				08F692A5243F183D006A0CB2 /* ChannelViewController.swift in Sources */,
 			);
