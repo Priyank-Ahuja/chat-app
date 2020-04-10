@@ -270,6 +270,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivJ-RH-CPR">
                                 <rect key="frame" x="82" y="369" width="250" height="36"/>
@@ -406,6 +411,22 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountButtonPressed:" destination="zvF-Cs-kn5" eventType="touchUpInside" id="6p7-FC-9ey"/>
+                                    <action selector="pickAvatarPressed:" destination="ykR-Bj-LaF" eventType="touchUpInside" id="YhB-Tv-uCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1y-yt-veQ">
+                                <rect key="frame" x="82" y="487" width="250" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="RhZ-Ey-kwd"/>
+                                    <constraint firstAttribute="width" constant="250" id="u7H-SH-NDq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <state key="normal" title="Generate background color">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="zvF-Cs-kn5" eventType="touchUpInside" id="5uX-zE-HiD"/>
+                                    <action selector="pickBGColorPressed:" destination="ykR-Bj-LaF" eventType="touchUpInside" id="Iwk-RO-1s9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUr-1C-NTb">
@@ -420,19 +441,13 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1y-yt-veQ">
-                                <rect key="frame" x="82" y="487" width="250" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="RhZ-Ey-kwd"/>
-                                    <constraint firstAttribute="width" constant="250" id="u7H-SH-NDq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <state key="normal" title="Generate background color">
-                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="createAccountButtonPressed:" destination="zvF-Cs-kn5" eventType="touchUpInside" id="5uX-zE-HiD"/>
+                                    <action selector="createAccountPressed:" destination="ykR-Bj-LaF" eventType="touchUpInside" id="hMD-eb-ldK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -457,6 +472,12 @@
                         <viewLayoutGuide key="safeArea" id="ghq-bd-Ctm"/>
                     </view>
                     <navigationItem key="navigationItem" id="kOg-hr-UCj"/>
+                    <connections>
+                        <outlet property="emailText" destination="LYl-2c-Z26" id="JHj-JK-lcs"/>
+                        <outlet property="passwordText" destination="KUK-y4-72d" id="cGe-iA-t7n"/>
+                        <outlet property="userImage" destination="C2S-5b-vmC" id="HHr-05-v53"/>
+                        <outlet property="userNameText" destination="MMk-18-YeV" id="b8G-Qa-zMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRk-dv-0Pr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="xDK-ot-NfN" userLabel="Exit" sceneMemberID="exit"/>
