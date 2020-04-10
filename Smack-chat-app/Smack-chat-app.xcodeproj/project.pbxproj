@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0818D5B22440816D00B767BD /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0818D5B12440816D00B767BD /* UserDataService.swift */; };
 		086CAF6C243DC98C00EF9F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086CAF6B243DC98C00EF9F00 /* AppDelegate.swift */; };
 		086CAF6E243DC98C00EF9F00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086CAF6D243DC98C00EF9F00 /* SceneDelegate.swift */; };
 		086CAF73243DC98C00EF9F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086CAF71243DC98C00EF9F00 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0818D5B12440816D00B767BD /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		086CAF68243DC98C00EF9F00 /* Smack-chat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack-chat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		086CAF6B243DC98C00EF9F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		086CAF6D243DC98C00EF9F00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				08CA8FA824404AFB0058193A /* AuthService.swift */,
+				0818D5B12440816D00B767BD /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				08F692A3243F1822006A0CB2 /* ChatViewController.swift in Sources */,
 				087EF90F24405BD900BB33B5 /* RoundedButton.swift in Sources */,
 				08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */,
+				0818D5B22440816D00B767BD /* UserDataService.swift in Sources */,
 				08CA8FA924404AFB0058193A /* AuthService.swift in Sources */,
 				08F6929E243F1072006A0CB2 /* SWRevealViewController.m in Sources */,
 				08F692A5243F183D006A0CB2 /* ChannelViewController.swift in Sources */,
