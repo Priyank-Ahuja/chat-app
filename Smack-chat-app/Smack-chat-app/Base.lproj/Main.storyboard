@@ -452,6 +452,10 @@
                                     <action selector="createAccountPressed:" destination="ykR-Bj-LaF" eventType="touchUpInside" id="hMD-eb-ldK"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xVl-Bp-nfq">
+                                <rect key="frame" x="188.5" y="317.5" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -470,6 +474,8 @@
                             <constraint firstItem="u1y-yt-veQ" firstAttribute="top" secondItem="5v4-s6-5ml" secondAttribute="bottom" constant="4" id="gxj-vp-yXD"/>
                             <constraint firstItem="HVn-Mg-6s1" firstAttribute="top" secondItem="gWr-D0-Ouo" secondAttribute="bottom" constant="40" id="kfd-tM-4cw"/>
                             <constraint firstItem="C2S-5b-vmC" firstAttribute="centerX" secondItem="6mm-9K-TCs" secondAttribute="centerX" id="nuu-Mj-jvu"/>
+                            <constraint firstItem="xVl-Bp-nfq" firstAttribute="centerX" secondItem="6mm-9K-TCs" secondAttribute="centerX" id="pR2-S4-iG2"/>
+                            <constraint firstItem="xVl-Bp-nfq" firstAttribute="centerY" secondItem="6mm-9K-TCs" secondAttribute="centerY" constant="-112" id="yYb-Wh-WR6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghq-bd-Ctm"/>
                     </view>
@@ -477,6 +483,7 @@
                     <connections>
                         <outlet property="emailText" destination="LYl-2c-Z26" id="JHj-JK-lcs"/>
                         <outlet property="passwordText" destination="KUK-y4-72d" id="cGe-iA-t7n"/>
+                        <outlet property="spinner" destination="xVl-Bp-nfq" id="9Za-fO-odk"/>
                         <outlet property="userImage" destination="C2S-5b-vmC" id="HHr-05-v53"/>
                         <outlet property="userNameText" destination="MMk-18-YeV" id="b8G-Qa-zMQ"/>
                     </connections>
