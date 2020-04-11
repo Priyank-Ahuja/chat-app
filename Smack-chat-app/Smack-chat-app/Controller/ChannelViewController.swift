@@ -14,6 +14,9 @@ class ChannelViewController: UIViewController {
     @IBOutlet weak var userImage: UIImageView!
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,11 @@ class ChannelViewController: UIViewController {
     }
 
     @objc func userDataDidChange(_ notif: Notification) {
+        setupUserInfo()
+        
+    }
+    
+    func setupUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginButton.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named: UserDataService.instance.avatarName)
@@ -44,6 +52,5 @@ class ChannelViewController: UIViewController {
             userImage.image = UIImage(named: "menuProfileIcon")
             userImage.backgroundColor = UIColor.clear
         }
-        
     }
 }
