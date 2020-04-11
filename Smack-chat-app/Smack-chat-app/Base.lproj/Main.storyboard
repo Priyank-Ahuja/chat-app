@@ -139,25 +139,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ue-ef-Peq">
-                                <rect key="frame" x="115" y="827" width="45" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonPressed:" destination="iBz-84-ljn" eventType="touchUpInside" id="euY-ig-RYF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIe-9B-BQo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ue-ef-Peq">
                                 <rect key="frame" x="115" y="826.5" width="45" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zvF-Cs-kn5" kind="show" identifier="toLogin" id="UOV-8j-xVg"/>
+                                    <action selector="loginButtonPressed:" destination="iBz-84-ljn" eventType="touchUpInside" id="euY-ig-RYF"/>
+                                    <segue destination="zvF-Cs-kn5" kind="show" identifier="toLogin" id="eit-Xe-5HB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,16 +162,17 @@
                             <constraint firstItem="tiQ-zB-aOC" firstAttribute="top" secondItem="uBy-We-sBL" secondAttribute="top" constant="24" id="VYN-o0-Su2"/>
                             <constraint firstItem="2Ed-Ac-WoR" firstAttribute="top" secondItem="LTi-QW-cKW" secondAttribute="bottom" constant="20" id="W5C-RE-Igd"/>
                             <constraint firstItem="2Ed-Ac-WoR" firstAttribute="leading" secondItem="uBy-We-sBL" secondAttribute="leading" constant="20" id="ZSB-CJ-P4W"/>
-                            <constraint firstItem="NIe-9B-BQo" firstAttribute="leading" secondItem="2Ed-Ac-WoR" secondAttribute="trailing" constant="20" id="lvS-hA-eq9"/>
                             <constraint firstItem="LTi-QW-cKW" firstAttribute="trailing" secondItem="uBy-We-sBL" secondAttribute="trailing" id="nD9-qh-y6o"/>
                             <constraint firstItem="Bog-hd-EgA" firstAttribute="leading" secondItem="uBy-We-sBL" secondAttribute="leading" constant="20" id="sMK-7L-Ntl"/>
                             <constraint firstItem="LTi-QW-cKW" firstAttribute="leading" secondItem="uBy-We-sBL" secondAttribute="leading" id="wlk-ub-Pva"/>
-                            <constraint firstItem="NIe-9B-BQo" firstAttribute="centerY" secondItem="2Ed-Ac-WoR" secondAttribute="centerY" id="y9Y-lW-IXT"/>
+                            <constraint firstItem="6ue-ef-Peq" firstAttribute="centerY" secondItem="2Ed-Ac-WoR" secondAttribute="centerY" id="x6G-nA-yTG"/>
+                            <constraint firstItem="6ue-ef-Peq" firstAttribute="leading" secondItem="2Ed-Ac-WoR" secondAttribute="trailing" constant="20" id="zhb-Wy-FaS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBy-We-sBL"/>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="6ue-ef-Peq" id="v8d-GY-wP1"/>
+                        <outlet property="userImage" destination="2Ed-Ac-WoR" id="UPy-E3-HQt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qk-Sx-RyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
