@@ -22,6 +22,8 @@
 		089104A8243F49EB00C4288A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089104A7243F49EB00C4288A /* Contants.swift */; };
 		08C3C9A72441D7DE0023006C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9A52441D7DE0023006C /* ProfileViewController.swift */; };
 		08C3C9A82441D7DE0023006C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C3C9A62441D7DE0023006C /* ProfileViewController.xib */; };
+		08C3C9AB2442390A0023006C /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9AA2442390A0023006C /* MessageService.swift */; };
+		08C3C9AD2442F7090023006C /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9AC2442F7090023006C /* Channel.swift */; };
 		08CA8FA924404AFB0058193A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA8FA824404AFB0058193A /* AuthService.swift */; };
 		08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC21243F53BF008AD7BE /* LoginViewController.swift */; };
 		08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */; };
@@ -50,6 +52,8 @@
 		089104A7243F49EB00C4288A /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		08C3C9A52441D7DE0023006C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		08C3C9A62441D7DE0023006C /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		08C3C9AA2442390A0023006C /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		08C3C9AC2442F7090023006C /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		08CA8FA824404AFB0058193A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DDEC21243F53BF008AD7BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			children = (
 				08CA8FA824404AFB0058193A /* AuthService.swift */,
 				0818D5B12440816D00B767BD /* UserDataService.swift */,
+				08C3C9AA2442390A0023006C /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 		08F692A1243F17DA006A0CB2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				08C3C9AC2442F7090023006C /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			files = (
 				086CAF6C243DC98C00EF9F00 /* AppDelegate.swift in Sources */,
 				086CAF6E243DC98C00EF9F00 /* SceneDelegate.swift in Sources */,
+				08C3C9AD2442F7090023006C /* Channel.swift in Sources */,
 				089104A5243F3BAF00C4288A /* GradientView.swift in Sources */,
 				089104A8243F49EB00C4288A /* Contants.swift in Sources */,
 				08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */,
@@ -329,6 +336,7 @@
 				0818D5B22440816D00B767BD /* UserDataService.swift in Sources */,
 				08CA8FA924404AFB0058193A /* AuthService.swift in Sources */,
 				0818D5BA2440DBB700B767BD /* CircleButton.swift in Sources */,
+				08C3C9AB2442390A0023006C /* MessageService.swift in Sources */,
 				08F6929E243F1072006A0CB2 /* SWRevealViewController.m in Sources */,
 				0818D5B42440A48B00B767BD /* AvatarPickerViewController.swift in Sources */,
 				08F692A5243F183D006A0CB2 /* ChannelViewController.swift in Sources */,
