@@ -25,6 +25,8 @@
 		08C3C9AB2442390A0023006C /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9AA2442390A0023006C /* MessageService.swift */; };
 		08C3C9AD2442F7090023006C /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9AC2442F7090023006C /* Channel.swift */; };
 		08C3C9AF2443126A0023006C /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9AE2443126A0023006C /* ChannelTableViewCell.swift */; };
+		08C3C9B22443185C0023006C /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9B02443185C0023006C /* AddChannelViewController.swift */; };
+		08C3C9B32443185C0023006C /* AddChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C3C9B12443185C0023006C /* AddChannelViewController.xib */; };
 		08CA8FA924404AFB0058193A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA8FA824404AFB0058193A /* AuthService.swift */; };
 		08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC21243F53BF008AD7BE /* LoginViewController.swift */; };
 		08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */; };
@@ -56,6 +58,8 @@
 		08C3C9AA2442390A0023006C /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		08C3C9AC2442F7090023006C /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		08C3C9AE2443126A0023006C /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		08C3C9B02443185C0023006C /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
+		08C3C9B12443185C0023006C /* AddChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelViewController.xib; sourceTree = "<group>"; };
 		08CA8FA824404AFB0058193A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DDEC21243F53BF008AD7BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		08C3C9A92441D7FC0023006C /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				08C3C9B12443185C0023006C /* AddChannelViewController.xib */,
 				08C3C9A62441D7DE0023006C /* ProfileViewController.xib */,
 			);
 			path = Xibs;
@@ -165,6 +170,7 @@
 				0818D5B52440A74D00B767BD /* AvatarCollectionViewCell.swift */,
 				08C3C9A52441D7DE0023006C /* ProfileViewController.swift */,
 				08C3C9AE2443126A0023006C /* ChannelTableViewCell.swift */,
+				08C3C9B02443185C0023006C /* AddChannelViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				086CAF78243DC98E00EF9F00 /* LaunchScreen.storyboard in Resources */,
+				08C3C9B32443185C0023006C /* AddChannelViewController.xib in Resources */,
 				086CAF75243DC98E00EF9F00 /* Assets.xcassets in Resources */,
 				08C3C9A82441D7DE0023006C /* ProfileViewController.xib in Resources */,
 				086CAF73243DC98C00EF9F00 /* Main.storyboard in Resources */,
@@ -344,6 +351,7 @@
 				08F6929E243F1072006A0CB2 /* SWRevealViewController.m in Sources */,
 				0818D5B42440A48B00B767BD /* AvatarPickerViewController.swift in Sources */,
 				08F692A5243F183D006A0CB2 /* ChannelViewController.swift in Sources */,
+				08C3C9B22443185C0023006C /* AddChannelViewController.swift in Sources */,
 				0818D5B82440DB0B00B767BD /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
