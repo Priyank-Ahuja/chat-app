@@ -29,6 +29,7 @@
 		08C3C9B32443185C0023006C /* AddChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C3C9B12443185C0023006C /* AddChannelViewController.xib */; };
 		08C3C9B5244339810023006C /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9B4244339810023006C /* SocketService.swift */; };
 		08C3C9B7244379C90023006C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9B6244379C90023006C /* Message.swift */; };
+		08C3C9B92443AB940023006C /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C9B82443AB940023006C /* KeyboardBoundView.swift */; };
 		08CA8FA924404AFB0058193A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA8FA824404AFB0058193A /* AuthService.swift */; };
 		08DDEC22243F53BF008AD7BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC21243F53BF008AD7BE /* LoginViewController.swift */; };
 		08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */; };
@@ -64,6 +65,7 @@
 		08C3C9B12443185C0023006C /* AddChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelViewController.xib; sourceTree = "<group>"; };
 		08C3C9B4244339810023006C /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		08C3C9B6244379C90023006C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		08C3C9B82443AB940023006C /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		08CA8FA824404AFB0058193A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DDEC21243F53BF008AD7BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08DDEC23243F5D6B008AD7BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				087EF90E24405BD900BB33B5 /* RoundedButton.swift */,
 				0818D5B72440DB0B00B767BD /* CircleImage.swift */,
 				0818D5B92440DBB700B767BD /* CircleButton.swift */,
+				08C3C9B82443AB940023006C /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				08DDEC24243F5D6B008AD7BE /* CreateAccountViewController.swift in Sources */,
 				0818D5B22440816D00B767BD /* UserDataService.swift in Sources */,
 				08CA8FA924404AFB0058193A /* AuthService.swift in Sources */,
+				08C3C9B92443AB940023006C /* KeyboardBoundView.swift in Sources */,
 				0818D5BA2440DBB700B767BD /* CircleButton.swift in Sources */,
 				08C3C9AB2442390A0023006C /* MessageService.swift in Sources */,
 				08C3C9B5244339810023006C /* SocketService.swift in Sources */,

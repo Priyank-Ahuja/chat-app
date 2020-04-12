@@ -49,4 +49,24 @@ class SocketService: NSObject {
             completion(true)
         }
     }
+    
+    func addMessage(messageBody: String, userId: String, channelId: String, completion: @escaping CompletionHandler) {
+        let user = UserDataService.instance
+        
+        let socketConnectionStatus = socket.status
+
+        switch socketConnectionStatus {
+        case SocketIOStatus.connected:
+            print("socket connected")
+        case SocketIOStatus.connecting:
+            print("socket connecting")
+        case SocketIOStatus.disconnected:
+            print("socket disconnected")
+        case SocketIOStatus.notConnected:
+            print("socket not connected")
+        }
+        
+        socket.emit("newMessage", messageBody, userId, channelId, user.name, user.avatarName, user.avatarColor)
+        completion(true)
+    }
 }
